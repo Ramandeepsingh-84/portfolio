@@ -42,7 +42,7 @@ const Contact = () => {
       {/* Contact Heading */}
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-5xl font-bold">Contact Us</h1>
-        <p className="text-sm md:text-lg mt-2">Feel Free to Reach Out!</p>
+        <p className="text-sm md:text-lg mt-2">Feel Free to Reach Out!!</p>
       </div>
 
       {/* Contact Form */}
