@@ -1,0 +1,49 @@
+.footer-container {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .rights-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #ff4b2b;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: #ff3a1a;
+    transform: scale(1.2);
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 75, 43, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .scroll-top:hover {
+    transform: scale(1.2);
+  }
+  
