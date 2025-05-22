@@ -22,7 +22,7 @@
 // export default certifications;
 
 
-import cloudComputingImg from "../../assets/Certificate1.jpg"; 
+// import cloudComputingImg from "../../assets/Certificate1.jpg"; 
 import nptelCertificate from "../../assets/nptel.png";
 import serverSideCertificate from "../../assets/serverside.png";
 import DSA from "../../assets/DSA.png";
@@ -41,7 +41,8 @@ const certifications = [
     id: 2,
     name: "Complete Interview Preparation",
     date: "July 2024",
-    image: cloudComputingImg, // using same image for now
+    // image: cloudComputingImg, // using same image for now
+    image: DSA,
     url: "https://example.com/interview-preparation-certificate",
     description: "Completed an extensive interview preparation course, focusing on DSA, system design, and problem-solving strategies for tech interviews."
   },
