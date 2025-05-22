@@ -1,56 +1,23 @@
-import React from "react";
-import { IoArrowForward } from "react-icons/io5";
+import React from 'react';
 
-const About = () => {
+const AboutMe = () => {
   return (
-    <div
-      id="About"
-      className="text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12"
-    >
-      <div>
-        <h2 className="text-2xl md:text-4xl font-bold">About Me</h2>
-        <div className="md:flex flex-wrap flex-col md:flex-row items-center gap-10">
-          {/* Circle animation removed */}
+    <section id="About" className="bg-[#0b1120] text-white py-20 px-6">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-5xl font-bold text-center mb-12">✨ About Me</h2>
+        <div className="bg-[#111827] p-8 rounded-2xl shadow-lg border border-purple-800 leading-relaxed text-lg space-y-6 text-gray-300">
+          <p>• I am currently in my final year of pursuing a Bachelor's Degree in <span className="text-purple-400 font-semibold">Computer Science and Engineering</span> from Lovely Professional University. My journey has been driven by a deep interest in technology and building real-world solutions.</p>
 
-          <ul>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={30} className="mt-1" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold leading-normal">
-                  Frontend Developer
-                </h1>
-                <p className="text-sm md:text-md leading-tight">
-                  I specialize in creating visually appealing and highly responsive websites. I love turning ideas into reality with seamless UI/UX.
-                </p>
-              </span>
-            </div>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={30} className="mt-1" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold leading-normal">
-                  Backend & Database Developer
-                </h1>
-                <p className="text-sm md:text-md leading-tight">
-                  I have experience in building secure and scalable backend systems, focusing on optimizing database performance and designing efficient APIs.
-                </p>
-              </span>
-            </div>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={30} className="mt-1" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold leading-normal">
-                  Passionate Coder & Problem Solver
-                </h1>
-                <p className="text-sm md:text-md leading-tight">
-                  I enjoy solving problems and continuously improving my skills. Currently, I'm working on projects involving full-stack development, cloud computing, and automation.
-                </p>
-              </span>
-            </div>
-          </ul>
+          <p>• I’ve developed a strong foundation in core technologies like <span className="text-purple-400">Java, SQL, Data Structures, Web Development, Git & GitHub</span>. These skills empower me to design, develop, and maintain efficient and scalable applications.</p>
+
+          <p>• I am passionate about <span className="text-purple-400">full-stack development</span>, with hands-on experience in both frontend and backend technologies. I enjoy crafting beautiful UIs as much as I love writing clean backend logic and database queries.</p>
+
+          <p>• I believe in the power of <span className="text-purple-400">continuous learning and self-growth</span>. I constantly seek new challenges and opportunities to improve my skills, explore emerging tech, and contribute to impactful projects.</p>
+
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default About;
+export default AboutMe;
