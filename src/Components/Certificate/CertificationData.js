@@ -22,7 +22,7 @@
 // export default certifications;
 
 
-import cloudComputingImg from "../../assets/certificate1.jpg"; 
+import cloudComputingImg from "../../assets/Certificate1.jpg"; 
 import nptelCertificate from "../../assets/nptel.png";
 import serverSideCertificate from "../../assets/serverside.png";
 import DSA from "../../assets/DSA.png";
