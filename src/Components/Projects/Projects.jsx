@@ -3,7 +3,8 @@ import ProjectCard from "./ProjectCard";
 import vpmsImg from "../../assets/vpms.png";
 import doctorAppointmentImg from "../../assets/doctor.png";
 import musicWebsiteImg from "../../assets/musicimg.png";
-import jobPortalImg from "../../assets/ecomm.png";
+import noteshub from "../../assets/noteshub.png";
+import jobPortalImg from "../../assets/job.png";
 
 
 const Projects = () => {
@@ -52,7 +53,7 @@ const Projects = () => {
       />
 
               <ProjectCard
-      img={""} // Replace with the actual image variable or path
+      img={noteshub} // Replace with the actual image variable or path
       title="NotesHub"
       main="A MERN-based note-taking web application designed for productivity and simplicity."
       fullDescription="NotesHub is a full-stack note-taking platform developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, edit, delete, and organize personal notes in a secure and user-friendly environment. Featuring user authentication, responsive design, and smooth CRUD operations, NotesHub is built to help users manage their daily tasks and thoughts efficiently. The project demonstrates seamless integration of front-end and back-end technologies, with a strong focus on usability and performance."
