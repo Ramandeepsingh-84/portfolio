@@ -9,7 +9,8 @@ const ProjectCard = ({ img, title, main, fullDescription, demoLink, sourceCodeLi
     Swal.fire({
       icon: "info",
       title: "Development Mode",
-      text: "This project is still in development mode.",
+      text: "Source Code is to be uploaded soon.",
+      // text: "This project is still in development mode.",
       confirmButtonColor: "#465697",
     });
   };
@@ -18,6 +19,7 @@ const ProjectCard = ({ img, title, main, fullDescription, demoLink, sourceCodeLi
     Swal.fire({
       icon: "info",
       title: "Not Live Yet!",
+      // text: "Source Code is to be uploaded soon.",
       text: "The project has been developed but is not live yet.",
       confirmButtonColor: "#465697",
     });
