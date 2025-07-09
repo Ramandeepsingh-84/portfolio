@@ -39,7 +39,7 @@ const Projects = () => {
         main="A modern Job Portal platform built using the MERN stack and latest web technologies."
         fullDescription="JobBridge is a full-featured job portal web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It connects job seekers with recruiters through an intuitive and responsive interface. Key features include job listings, company profiles, user authentication, resume uploads, application tracking, and real-time job filtering. Built with modern UI components and robust backend logic, this project demonstrates end-to-end web development with a focus on usability and performance."
         demoLink="" // Replace this with the correct JobBridge demo link if available
-        sourceCodeLink="" // Replace this with the correct JobBridge repo link if available
+        sourceCodeLink="https://github.com/Ramandeepsingh-84/jobBridge" // Replace this with the correct JobBridge repo link if available
       />
 
 
