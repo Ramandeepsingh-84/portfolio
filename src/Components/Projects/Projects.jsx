@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import vpmsImg from "../../assets/vpms.png";
-import doctorAppointmentImg from "../../assets/musicimg.png";
+import doctorAppointmentImg from "../../assets/doctor.png";
 import musicWebsiteImg from "../../assets/musicimg.png";
 import jobPortalImg from "../../assets/ecomm.png";
 
