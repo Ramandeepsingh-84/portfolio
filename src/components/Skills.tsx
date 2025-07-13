@@ -3,33 +3,76 @@ import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 
 export const Skills = () => {
+  // const skillCategories = [
+  //   {
+  //     title: "Frontend",
+  //     skills: ["React", "Vue.js", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Nuxt.js"],
+  //     color: "from-blue-500 to-cyan-500"
+  //   },
+  //   {
+  //     title: "Backend",
+  //     skills: ["Node.js", "Python", "Java", "Express.js", "Django", "Flask", "Spring Boot", "REST APIs", "GraphQL", "Microservices"],
+  //     color: "from-indigo-500 to-purple-500"
+  //   },
+  //   {
+  //     title: "Database",
+  //     skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "Supabase", "Prisma", "Mongoose", "SQL", "NoSQL"],
+  //     color: "from-green-500 to-emerald-500"
+  //   },
+  //   {
+  //     title: "DevOps & Tools",
+  //     skills: ["Docker", "AWS", "Git", "GitHub", "Vercel", "Netlify", "CI/CD", "Linux", "Nginx", "Webpack"],
+  //     color: "from-orange-500 to-red-500"
+  //   },
+  //   {
+  //     title: "Mobile & Other",
+  //     skills: ["React Native", "Flutter", "Electron", "PWA", "WebRTC", "Socket.io", "Jest", "Cypress", "Figma", "Adobe XD"],
+  //     color: "from-violet-500 to-pink-500"
+  //   }
+  // ];
+
   const skillCategories = [
-    {
-      title: "Frontend",
-      skills: ["React", "Vue.js", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Nuxt.js"],
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Backend",
-      skills: ["Node.js", "Python", "Java", "Express.js", "Django", "Flask", "Spring Boot", "REST APIs", "GraphQL", "Microservices"],
-      color: "from-indigo-500 to-purple-500"
-    },
-    {
-      title: "Database",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "Supabase", "Prisma", "Mongoose", "SQL", "NoSQL"],
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "DevOps & Tools",
-      skills: ["Docker", "AWS", "Git", "GitHub", "Vercel", "Netlify", "CI/CD", "Linux", "Nginx", "Webpack"],
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Mobile & Other",
-      skills: ["React Native", "Flutter", "Electron", "PWA", "WebRTC", "Socket.io", "Jest", "Cypress", "Figma", "Adobe XD"],
-      color: "from-violet-500 to-pink-500"
-    }
-  ];
+  {
+    title: "Frontend",
+    skills: [
+      "React", "Vue.js", "Angular", "TypeScript", "JavaScript",
+      "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Nuxt.js"
+    ],
+    color: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Backend",
+    skills: [
+      "Node.js", "Python", "Java", "Express.js", "Django",
+      "Flask", "Spring Boot", "REST APIs", "GraphQL", "Microservices"
+    ],
+    color: "from-indigo-500 to-purple-500"
+  },
+  {
+    title: "Database",
+    skills: [
+      "MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase",
+      "Supabase", "Prisma", "Mongoose", "SQL", "NoSQL"
+    ],
+    color: "from-green-500 to-emerald-500"
+  },
+  {
+    title: "Core CS Subjects",
+    skills: [
+      "Data Structures & Algorithms", "Object-Oriented Programming",
+      "DBMS", "Operating Systems", "Computer Networks"
+    ],
+    color: "from-yellow-500 to-amber-500"
+  },
+  // {
+  //   title: "Mobile & Other",
+  //   skills: [
+  //     "React Native", "Flutter", "Electron", "PWA", "WebRTC",
+  //     "Socket.io", "Jest", "Cypress", "Figma", "Adobe XD"
+  //   ],
+  //   color: "from-violet-500 to-pink-500"
+  // }
+];
 
   return (
     <div className="py-16 sm:py-20 max-w-7xl mx-auto">

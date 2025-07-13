@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Download, Phone, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import resumeFile from "../../assets/RamanResume.pdf";
 
 export const Hero = () => {
   const scrollToAbout = () => {
@@ -98,16 +99,24 @@ export const Hero = () => {
             <Sparkles className="w-4 h-4 mr-2" />
             View My Work
           </Button>
-          
           <Button
-            size="lg"
-            variant="outline"
-            className="w-full sm:w-auto border-2 border-blue-400/30 bg-slate-800/50 hover:bg-blue-900/30 text-blue-100 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold backdrop-blur-sm transition-all duration-300 hover:border-blue-400/60"
-            onClick={() => window.open('/resume.pdf', '_blank')}
-          >
-            <Download size={16} className="mr-2" />
-            Download Resume
-          </Button>
+  size="lg"
+  variant="outline"
+  className="w-full sm:w-auto border-2 border-blue-400/30 bg-slate-800/50 hover:bg-blue-900/30 text-blue-100 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold backdrop-blur-sm transition-all duration-300 hover:border-blue-400/60"
+  asChild
+>
+  <a
+    href="/Resume.pdf"
+    download="Ramandeep_Singh_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Download size={16} className="mr-2 inline-block" />
+    Download Resume
+  </a>
+</Button>
+
+
         </motion.div>
 
         <motion.div

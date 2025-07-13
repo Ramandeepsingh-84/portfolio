@@ -3,15 +3,22 @@ import { ExternalLink, Github, Code, Calendar, Users, Shield, Award } from 'luci
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import doctor from '../assets/doctor.png';
+import job from '../assets/job.png';
+import gfg from '../assets/gfg.jpg';
+import DSA from '../assets/DSA.png';
+import nptel from '../assets/nptel.png';
+import serverside from '../assets/serverside.png';
+
 
 export const Projects = () => {
   const projects = [
     {
       title: "MediServe - Doctor Appointment System",
       description: "A comprehensive full-stack healthcare platform featuring secure role-based access for admins, doctors, and patients. Includes real-time doctor availability, efficient booking system, and admin dashboard for doctor verification and appointment oversight.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+    image: doctor,
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      githubUrl: "https://github.com/Ramandeepsingh-84",
+      githubUrl: "https://github.com/Ramandeepsingh-84/doctorappointment",
       timeline: "January 2025 – May 2025",
       features: ["Role-based Authentication", "Real-time Availability", "Admin Dashboard", "Responsive UI"],
       featured: true
@@ -19,9 +26,9 @@ export const Projects = () => {
     {
       title: "JobBridge - MERN Stack Job Portal",
       description: "A dual-interface job portal connecting employers and job seekers. Features advanced job search, resume uploads, real-time application tracking, and secure role-based authentication with responsive design across all devices.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6b7fc?auto=format&fit=crop&w=800&q=80",
+      image:job,
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
-      githubUrl: "https://github.com/Ramandeepsingh-84",
+      githubUrl: "https://github.com/Ramandeepsingh-84/jobBridge",
       timeline: "November 2024 – February 2025",
       features: ["Advanced Job Search", "Resume Upload", "Application Tracking", "JWT Security"],
       featured: true
@@ -43,25 +50,33 @@ export const Projects = () => {
       title: "Complete Interview Preparation",
       provider: "GeeksforGeeks",
       timeline: "January 2024 – August 2024",
-      skills: ["DSA", "OS", "DBMS", "OOPs", "System Design"]
+      skills: ["DSA", "OS", "DBMS", "OOPs", "System Design"],
+      certificateUrl: gfg
+
     },
     {
       title: "Cloud Computing",
       provider: "NPTEL",
       timeline: "July 2024 – October 2024",
-      skills: ["Virtualization", "IaaS", "PaaS", "SaaS"]
+      skills: ["Virtualization", "IaaS", "PaaS", "SaaS"],
+      certificateUrl: nptel
+
     },
     {
       title: "Data Structures and Algorithms",
       provider: "Udemy",
       timeline: "February 2024 – April 2024",
-      skills: ["Arrays", "Trees", "Graphs", "Problem Solving"]
+      skills: ["Arrays", "Trees", "Graphs", "Problem Solving"],
+      certificateUrl: DSA
+
     },
     {
       title: "Server-side JavaScript with Node.js",
       provider: "Coursera",
       timeline: "January 2024 – April 2024",
-      skills: ["REST APIs", "Express.js", "MongoDB Integration"]
+      skills: ["REST APIs", "Express.js", "MongoDB Integration"],
+      certificateUrl: serverside
+
     }
   ];
 
@@ -293,17 +308,32 @@ export const Projects = () => {
                 </div>
               </div>
               
-              <div className="flex flex-wrap gap-2">
-                {cert.skills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-white/10 text-gray-300 text-xs"
+              <div className="flex flex-wrap items-center gap-2 justify-between">
+                <div className="flex flex-wrap gap-2">
+                  {cert.skills.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="bg-white/10 text-gray-300 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+
+                {cert.certificateUrl && (
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-purple-500 text-purple-300 hover:bg-purple-500/10 text-xs px-3 py-1"
+                    onClick={() => window.open(cert.certificateUrl, '_blank')}
                   >
-                    {skill}
-                  </Badge>
-                ))}
+                    View
+                    <ExternalLink size={14} className="ml-1" />
+                  </Button>
+                )}
               </div>
+
             </Card>
           </motion.div>
         ))}
