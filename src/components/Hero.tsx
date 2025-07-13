@@ -149,14 +149,14 @@ export const Hero = () => {
           >
             <Mail size={20} className="sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
           </Button>
-          <Button
+          {/* <Button
             variant="ghost"
             size="lg"
             className="text-gray-400 hover:text-white hover:bg-cyan-500/20 transition-all duration-300 p-2 sm:p-3 rounded-xl border border-transparent hover:border-cyan-400/30 group"
-            onClick={() => window.open('tel:9103030155', '_blank')}
+            onClick={() => window.open('tel:91', '_blank')}
           >
             <Phone size={20} className="sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
-          </Button>
+          </Button> */}
         </motion.div>
 
         <motion.div
